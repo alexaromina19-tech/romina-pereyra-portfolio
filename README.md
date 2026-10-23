@@ -2,7 +2,7 @@
 
 Portfolio de diseño de producto, gráfico y editorial. Incluye 17 proyectos con descripción, imágenes de resultado y proceso, además de biografía y currículum.
 
-El diseño adapta la composición de michomichi.com a la identidad verde, serif y caligráfica del portfolio de Romina. Los textos y fotografías proceden del portfolio facilitado por Romina; los proyectos de estudio y reinterpretación de marcas se presentan como trabajo de formación en diseño.
+El diseño adapta la composición de michomichi.com al fondo negro y al nombre completo de Romina, que alterna automáticamente entre cinco tipografías. Los textos y fotografías proceden del portfolio facilitado por Romina; los proyectos de estudio y reinterpretación de marcas se presentan como trabajo de formación en diseño.
 
 ## Sitio publicado
 
@@ -21,6 +21,10 @@ La carpeta local editable original se llama `portfolio`.
 
 ## Tipografía e imágenes
 
-Bodoni Moda y Pinyon Script se distribuyen bajo la licencia SIL Open Font License, incluida en `font-licenses.txt`. Sustituyen las fuentes The Seasons y Nautica del PDF original. Las imágenes están optimizadas en WebP y se sirven desde el propio repositorio.
+Bodoni Moda, Pinyon Script, Anton, Space Mono y UnifrakturMaguntia se distribuyen bajo la licencia SIL Open Font License, incluida en `font-licenses.txt`. Sustituyen las fuentes The Seasons y Nautica del PDF original. Las imágenes están optimizadas en WebP y se sirven desde el propio repositorio.
 
 Contacto profesional: alexaromina30@gmail.com.
+
+
+El inicio muestra los 17 proyectos en filas. Cada tarjeta reproduce al pasar el ratón o recibir foco una secuencia de tres fotografías reales con transiciones y movimiento. Estas imágenes se cargan al activar la tarjeta. Las preferencias de movimiento reducido detienen las animaciones.
+
