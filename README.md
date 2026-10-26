@@ -37,7 +37,7 @@ Referencias: https://lovable.dev/templates/websites/portfolio/parallax-artist-po
 
 ## Estadísticas con Google Analytics 4
 
-Panel privado (inicia sesión como alexaromina19@gmail.com):
+Panel privado (inicia sesión con la cuenta de Google de Romina):
 https://analytics.google.com/analytics/web/#/a413466149p560769907/reports/intelligenthome
 
 Propiedad: Portfolio de Romina Pereyra. Flujo web:16205809746. ID público:G-8MDXK7THSJ.
