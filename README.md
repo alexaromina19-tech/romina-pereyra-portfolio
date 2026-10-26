@@ -33,3 +33,25 @@ Bodoni Moda, Pinyon Script, Anton, Space Mono y UnifrakturMaguntia: licencia SIL
 Las fotografías proceden del portfolio facilitado por Romina, se procesan con el tratamiento de color de PDFium y no llevan filtros de brillo ni color. Se conserva la resolución disponible en el PDF y se exportan sin compresión con pérdida, con perfil sRGB. No se amplían artificialmente las fotografías originales. Las tarjetas de Proyectos usan versiones horizontales de 16:10, reenmarcadas con ImageGen y fondos extendidos a partir de cada fotografía. Se guardan en archivos *-archive-focus.webp separados de los originales. Los encuadres específicos del inicio se aplican con ventanas CSS sobre los píxeles originales; IKEA muestra solo la silla, Vitra la silla completa, Grease ambas cajas más grandes y los wearables un encuadre cercano. Las fotografías y portadas dentro de cada ficha permanecen originales. Los proyectos de estudio y reinterpretación de marcas se presentan como trabajo de formación en diseño.
 
 Referencias: https://lovable.dev/templates/websites/portfolio/parallax-artist-portfolio y https://michomichi.com/ . Contacto profesional: alexaromina30@gmail.com. Los enlaces de contacto abren un nuevo correo de Gmail con ese destinatario.
+
+
+## Estadísticas con Google Analytics 4
+
+Panel privado (inicia sesión como alexaromina19@gmail.com):
+https://analytics.google.com/analytics/web/#/a413466149p560769907/reports/intelligenthome
+
+Propiedad: Portfolio de Romina Pereyra. Flujo web:16205809746. ID público:G-8MDXK7THSJ.
+
+La integración utiliza consentimiento básico: no se carga Google Analytics hasta aceptar. Se pueden aceptar/rechazar las estadísticas desde el aviso o el botón permanente «Privacidad y cookies» al final de cualquier página. Rechazar después de aceptar detiene la medición, elimina las cookies de esta propiedad y recarga la página para descargar los listeners del proveedor. Consentimiento y cookies tienen duración máxima de180días; la personalización publicitaria y Google signals están desactivados. Solo mide el dominio/ruta publicados, nunca localhost.
+
+Para excluir tus visitas abre «Privacidad y cookies» y activa «No contar mis visitas en este navegador». Repite en el móvil y los otros navegadores. La exclusión persiste hasta desactivarla o borrar el almacenamiento del navegador; no depende de una IP doméstica. No habilita la medición por sí misma.
+
+En Informes → Interacción → Páginas y pantallas puedes consultar proyectos por título. Los hash-routes se envían como rutas virtuales normales, por ejemplo /romina-pereyra-portfolio/proyecto/time-out; la navegación real sigue usando #proyecto/time-out. Se omiten consultas de versión y otros parámetros arbitrarios. La medición mejorada del flujo está desactivada: la app envía una sola page_view por pantalla y deja al SDK medir el tiempo de interacción.
+
+Eventos: contact_click (abrir redacción de Gmail), portfolio_open (abrir portfolio de Drive), image_open (ampliar foto, con project_id/gallery_kind/image_index), project_filter (categoría del archivo). Un clic en contacto no demuestra que se haya enviado un correo; abrir Drive no mide el tiempo dentro del documento. Las cifras empiezan con esta activación y son aproximadas: dependen del consentimiento y los bloqueadores.
+
+QA: ?analytics_debug=1 activa debug_mode solamente en esa carga, para DebugView. El filtro de tráfico de desarrollador debe estar Activo antes de probar; así las pruebas no aparecen como visitas normales. Nunca pongas debugMode:true para todas las visitas. No se incluyen secretos, credenciales ni tokens en el repositorio.
+
+Verificación: node --test tests/analytics.test.mjs
+
+Conservación verificada en la propiedad: usuarios2meses, eventos2meses, sin reinicio por actividad nueva. Los informes agregados estándar no quedan sujetos a esos plazos.
